@@ -30,18 +30,18 @@ public class MainActivity extends AppCompatActivity {
         Intent intentTel = new Intent(Intent.ACTION_CALL);
         switch (v.getId()){
             case R.id.webButton:
-                Uri web = Uri.parse("https://stackoverflow.com");
+                Uri web = Uri.parse("https://youtube.com");
                 intentWebMap.setData(web);
                 startActivity(intentWebMap);
                 break;
             case R.id.mapButton:
-                Uri map = Uri.parse("google.streetview:cbll=42.8452412,75.292383");
+                Uri map = Uri.parse("google.streetview:cbll=42.846938, 75.317709");
                 intentWebMap.setData(map);
                 intentWebMap.setPackage("com.google.android.apps.maps");
                 startActivity(intentWebMap);
                 break;
             case R.id.phoneButton:
-                Uri tel = Uri.parse("tel:" + "+996553055266");
+                Uri tel = Uri.parse("tel:" + "+996557766766");
                 intentTel.setData(tel);
                 intentTel.setAction(Intent.ACTION_DIAL);
                 startActivity(intentTel);
